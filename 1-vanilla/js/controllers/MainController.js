@@ -13,7 +13,7 @@ const tag = '[MainController]'
 export default {
   init() {
     FormView.setup(document.querySelector('form'))
-      .on('@submit', e => this.onSubmit(e.detail.input))
+      .on('@submit', e => this.onSubmit(e.detail.input)) //FormView에서 입력값 전달받음
       .on('@reset', e => this.onResetForm())
     
     TabView.setup(document.querySelector('#tabs'))
